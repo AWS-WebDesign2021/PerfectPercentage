@@ -158,6 +158,51 @@ footer {
   width: 100%;
 }
 
+/*CSS for image gallery on food tab */
+.foodgallery {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 5px solid #CBCBCF;
+  float: left;
+  width: 180px;
+}
+
+.foodgallery img {
+  width: 100%;
+  height: 100%;
+}
+/*CSS for image gallery on food tab , most left , to center the gallery*/
+.foodleft {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 60px;
+  margin-right: 15px;
+  border: 5px solid #CBCBCF;
+  float: left;
+  width: 180px;
+}
+
+.foodleft img {
+  width: 100%;
+  height: 100%;
+}
+/*CSS for image gallery on food tab , most right , to center the gallery*/
+.foodright {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  margin-right: 60px;
+  border: 5px solid #CBCBCF;
+  float: left;
+  width: 180px;
+}
+
+.foodright img {
+  width: 100%;
+}
+
 .description {
   padding: 15px;
   text-align: center;
