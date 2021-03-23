@@ -73,8 +73,12 @@ li a:hover .dropdown:hover .dropbtn {background-color: #031B62 color: #F5F1E8;}
 /* gives title a specific style */
 h1.title {
   text-align: center;
+  text-shadow: 2px 2px 4px #D1D1D1;
 }
-
+p.shadow {
+  text-align: center;
+  text-shadow: 2px 2px 4px #D1D1D1;
+}
 h1 {
   animation: bounce 2s;
 }
@@ -97,6 +101,27 @@ h1 {
   float: left;
   width: 100%;
   overflow: hidden;
+}
+
+
+.headerhome {
+  background-color: #F5F1E8;
+  text-align: center;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  background-image: url(Taipei.jpg);
+  background-size: contain;
+}
+
+.headerfood {
+  background-color: #F5F1E8;
+  text-align: center;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  background-image: url(food.jpg);
+  background-size: contain;
 }
 
 /* Create two columns that floats next to each other for home page */
