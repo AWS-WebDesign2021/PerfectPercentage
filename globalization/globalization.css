@@ -1,0 +1,312 @@
+
+/* the css for dropdown menu and navigation bar*/
+.navbar {
+  margin: 0;
+  padding: 0;
+  background-color: #BDBBAD;
+  min-width: 1000px;
+  min-height: 25px;
+  overflow: hidden;
+  width: 100%;
+}
+
+ul {
+list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  background-color: #BDBBAD;
+  font-size: 20px;
+  min-width: 1000px;
+  width: 100%;
+  top: 0px;
+}
+
+li {
+  list-style-type: none;
+  float: left;
+  background-color: #BDBBAD;
+  color: #2C2627;
+}
+
+li a, .dropbtn {
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+  color: #2C2627;
+  padding: 12px 16px;
+  text-decoration: none;
+  background-color: #BDBBAD;
+}
+
+ul a:hover  {background-color: #56514B; color: #E7E5DD;}
+/*the code for it changes background color when hovered over*/
+li a:hover .dropdown:hover .dropbtn {background-color: #56514B color: #E7E5DD;}
+
+.dropdown li{
+  list-style-type: none;
+  display: inline-block;
+  background-color: #BDBBAD;
+}
+/* The code for the dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #BDBBAD;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*size and place of shadow*/
+  z-index: 2;
+}
+
+.dropdown-content a {
+  color: #2C2627;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #E7E5DD; color: #BDBBAD;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* gives title a specific style */
+h1.title {
+  text-align: center;
+  text-shadow: 2px 2px 4px #BDBBAD;
+}
+p.shadow {
+  text-align: center;
+  text-shadow: 2px 2px 4px #BDBBAD;
+}
+
+h1 {
+  animation: bounce 2s;
+}
+/*animation for h1*/
+@keyframes bounce {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;}
+  50% {
+    transform: scale(1.2);
+    opacity: 1;}
+  100% {
+    transform: scale(1);}
+}
+
+/* sets div for header */
+.header {
+  background-color: #E7E5DD;
+  text-align: center;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.headerhome {
+  background-color: #E7E5DD;
+  text-align: center;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  background-size: contain;
+}
+
+.headerfood {
+  background-color: #E7E5DD;
+  text-align: center;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  background-image: url(food.jpg);
+  background-size: contain;
+}
+
+/* Create two columns that floats next to each other for home page */
+.columnh {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* for Taiwan flag as home button */
+img.homebutton {align-items: center; width: 120px; height:100px;}
+
+/*for different div styles on branch pages */
+.one {
+  margin-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  background-color: #E7E5DD;
+}
+/*css style for results display */
+#result {
+  margin-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  background-color: #E7E5DD;
+  color: #2C2627;
+  display: none;
+}
+/* css style for home page display and transitions */
+.home1{
+  background-color: #E7E5DD;
+  color: #2C2627;
+  padding: 30px;
+  margin: 10px;
+  width: 100%;
+  float: left;
+}
+
+.home1:hover {
+  box-shadow: inset 0 0 0 5px #2C2627;
+}
+
+.home2{
+  background-color: #E7E5DD;
+  color: #2C2627;
+  padding: 30px;
+  margin: 10px;
+  overflow: hidden;
+}
+.home2:hover {
+  box-shadow: inset 0 0 0 5px #E7E5DD;
+}
+/* css style for branch pages display */
+.branch1{
+  background-color: #E7E5DD;
+  color: #2C2627;
+  padding: 30px;
+  margin: 10px;
+}
+
+.branch1:hover {
+  box-shadow: inset 0 0 0 5px #2C2627;
+}
+
+/* css style for branch pages display */
+.branch2{
+  background-color: #2C2627;
+  color: #E7E5DD;
+  padding: 30px;
+  margin: 10px;
+}
+
+.branch2:hover {
+  box-shadow: inset 0 0 0 5px #E7E5DD;
+}
+/*CSS for image gallery : home tab */
+.galleryr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  margin-right: 80px;
+  border: 5px inset #2C2627;
+  float: right;
+  width: 180px;
+  height: 180px;
+}
+.galleryr:hover {
+    border: 5px outset #56514B;
+}
+
+.galleryl {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 80px;
+  margin-right: 15px;
+  border: 5px inset #2C2627;
+  float: left;
+  width: 180px;
+  height: 180px;
+}
+.galleryl:hover {
+    border: 5px outset #56514B;
+}
+
+.galleryr img {
+  width: 100%;
+  height: 100%;
+}
+
+.galleryl img {
+  width: 100%;
+  height: 100%;
+}
+/* CSS code for the description under images within image gallery - make it scrollable */
+.description {
+  text-align: center;
+  color: black;
+  overflow: scroll;
+  width: 180px;
+  height: 80px;
+}
+/* CSS code to style images on branch website - positioning */
+img.branch {
+  padding: 8px;
+}
+
+/*css code for the animation on the right side of the website : recurring dreams and gophers*/
+.animationhome {
+  animation-name: move;
+  animation-duration: 300s;
+  transition: 0.2s;
+  animation-iteration-count: infinite;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  }
+/* keyframes code for the animation on the right side of the webiste : recurrring dreams and gophers */
+@keyframes move {
+  0% {background-image: url(technology.jpg);}
+  5% {background-image: url(food.jpg);}
+  10% {background-image: url(technology.jpg);}
+  15% {background-image: url(food.jpg);}
+  20% {background-image: url(technology.jpg);}
+  25% {background-image: url(food.jpg);}
+  30% {background-image: url(technology.jpg);}
+  35% {background-image: url(food.jpg);}
+  40% {background-image: url(technology.jpg);}
+  45% {background-image: url(food.jpg);}
+  50% {background-image: url(technology.jpg);}
+  55% {background-image: url(food.jpg);}
+  60% {background-image: url(technology.jpg);}
+  65% {background-image: url(food.jpg);}
+  70% {background-image: url(technology.jpg);}
+  75% {background-image: url(food.jpg);}
+  80% {background-image: url(technology.jpg);}
+  85% {background-image: url(food.jpg);}
+  90% {background-image: url(technology.jpg);}
+  95% {background-image: url(food.jpg);}
+  100% {background-image: url(technology.jpg);}
+}
+/* CSS code to style links on home page*/
+a.homelink {
+  color: #2C2627;
+}
+/* CSS code for the table styling */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
