@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<style>
+.one {
+    background-color: #A13842;
+    color: #F9F4DB;
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    padding: 20px;
+    font-size: 18px;
+    width: 100%;
+    float: left;
+  }
+
+.form {
+  width: 50%;
+}
+#result {
+      background-color: #F9F4DB;
+      color: #A13842;
+      margin-left: 40px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      margin-right: 40px;
+      padding: 20px;
+      display: none;
+      width: 100%;
+    }
+
+.websitebg {
+  color: #A13842;
+
+    margin: 25px;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .button {
+    background-color: #F9F4DB;
+    border: inset;
+    color: #A13842;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+  }
+
+  h1.left {text-shadow: 2px 2px 4px #F9C4BA; text-align: left;}
+
+img {
+float: right;
+margin-top: 120px;
+margin-bottom: 40px;
+margin-right: 40px;
+}
+</style>
+<div class="websitebg">
+<h1 class="left">Online Movie Tickets and Snacks Order System</h1>
+</div>
+<img src="movie.gif" alt="meme">
+<div class="form">
+<div class="one">
+<form class="style" action="index.html" method="post">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <br>
+  <label for="number">Number of Watchers:</label>
+  <input type="number" id="number" name="number" min="1" max="15" step="1">
+  <br>
+  <br>
+<label for="show">What Movie do you wanna watch today?</label><br>
+<br>
+<input type="radio" id="Parasite" name="movie" value="parasite">
+<label for="Parasite">Parasite</label><br>
+<input type="radio" id="wir" name="movie" value="wir">
+<label for="wir">Wreck it Ralph</label><br>
+<input type="radio" id="dm" name="movie" value="dm">
+<label for="dm">Despicable Me 1</label><br>
+<input type="radio" id="it" name="movie" value="it">
+<label for="it">IT</label><br>
+<input type="radio" id="other" name="movie" value="other">
+<label for="other">Other (choose at counter)</label>
+<br>
+<br>
+<br>
+<label for="snacks">Any drinks or snacks that you would like? (additional charges)</label><br>
+<br>
+<input type="checkbox" id="popcorn" name="popcorn" value="popcorn">
+<label for="popcorn">Popcorn 4$</label><br>
+<input type="checkbox" id="soda" name="soda" value="soda">
+<label for="soda">Soda 1.50$</label><br>
+<input type="checkbox" id="HD" name="HD" value="HD">
+<label for="HD">Hot Dog 3$</label>
+<br>
+<br>
+<input type="button" value="submit" onclick="showInput();" class="button">
+</form>
+
+<div id="result">
+  <p>Hi! <span id="name1"></span> <br> Your tickets will be for <span id="number1"></span> people watching <span id="movie1"></span> and your total would be <span id="tickets"></span>$ for tickets and <span id="extra"></span> for snacks. Thank you, Have a wonderful day!</p>
+</div>
+</div>
+</div>
+
+<script language="JavaScript">
+    function showInput() {
+        var r = document.getElementById("result");
+        r.style.display = "block";
+
+        var tickets = 0
+        var tickets = document.getElementById("number").value * 10;
+
+        var extra = 0
+        if (document.getElementById("popcorn").checked)
+        {
+          extra = extra + 4;
+        }
+        if (document.getElementById("soda").checked)
+        {
+          extra = extra + 1.5;
+        }
+        if (document.getElementById("HD").checked)
+        {
+          extra = extra + 3;
+        }
+        document.getElementById("number1").innerHTML = document.getElementById("number").value;
+        document.getElementById("name1").innerHTML = document.getElementById("name").value;
+        document.getElementById("movie1").innerHTML = document.getElementById("movie".value);
+        document.getElementById("tickets").innerHTML = tickets;
+        document.getElementById("extra").innerHTML = extra;
+
+
+
+
+
+      }
+        </script>
