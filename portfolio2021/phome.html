@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+<!-- title is how the website name is displayed on its tab -->
+  <title>PORTFOLIO : HOME</title>
+<!-- linking it to a css file -->
+  <link href="p2021.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<!-- container for header -->
+<div class="header">
+  <h1 class="header">PORTFOLIO 2021 : AMBER FANG<br><br><i>HOME</i></h1>
+<!-- video for header -->
+  <video autoplay muted loop src="code.mp4" class="header">
+  </video>
+</div>
+<br>
+<!-- div intro , about me section on the website -->
+<div class="intro">
+<img src="me.jpg" alt="AmberFang2021/author picture" align="right" width="265px" height="300px" class="fade">
+<h1 class="sub">'About Me'</h1>
+<p class="introo">> My name is Amber Fang and I am a current green tie at AWS (Libra Sun Leo Moon and Virgo Rising)</p>
+<p class="introo">> Some of my interests are : socializing , web design, looking at memes and/or just sitting around.</p>
+<p class="introo">> I have a very vast music taste - my recent favorites would be Chase Atlantic / Why Don't We</p>
+<p class="introo">> I am fluent in both English and Mandarin (I was born in Canada / raised in Taiwan)</p>
+<p class="introo">> Random Fact about me : I love Kirby.<img src="https://e7.pngegg.com/pngimages/150/605/png-clipart-kirby-s-dream-land-kirby-star-allies-nintendo-switch-kirby.png" alt="kirby" width="100px" height="50px"></p>
+<a target="_blank" href="https://www.instagram.com/amberfanggg/"><img src="insta.png" alt="instagram thumbnail" width="150px" height="50px" align="left"></a>
+</div>
+<br>
+<!-- div intro , web design journey section on the website -->
+<div class="intro1">
+<br>
+<h1 class="sub">'Web Design Journey'</h1>
+<p class="introo">> I first discovered my interest in web design around 2018, but it wasn't until 2019 fall that I had a chance to actually take a web design course. </p>
+<p class="introo">> After a whole semester of web design courses, I worked on several projects (<a target="_blank" href="portfolio/home.html">2019 portfolio</a>) but I didn't continue further until early 2021.</p>
+<p class="introo">> Picking up web design again after a year , I dived deeper into JavaScript functions and the possibilities that CSS brings.</p>
+<p class="introo">> As you will see from my projects this year, I focused more on the layout and different CSS functionalities (ex : hover) when coding different projects.</p>
+</div>
+<div class="row">
+<div class="intro2">
+<div class="pcolumn left">
+<h1 class="sub">'Projects Overview'</h1>
+</div>
+<div class="pcolumn right1">
+  <!-- button for display all banner , triggers the JS and hides slideshow div and display div containing all banner -->
+<button type="button" name="button 1" class="button1" onclick="DisplayAll();" >Display All Banner</button>
+</div>
+<div class="pcolumn right2">
+  <!-- button for display all banner , triggers the JS and hides div containing all banner and display slideshow div -->
+<button type="button" name="button 1" class="button1" onclick="DisplayS();" >Display Slideshow</button>
+</div>
+</div>
+</div>
+<div class="row" id="all">
+<!-- div containing all banner , display set to none at first-->
+<div class="pcolumn sidel">
+  <img src="bg.png" alt="blank" width="75%" height="50%">
+</div>
+<div class="pcolumn middle">
+  <a href="pop.html" title="click to go to web page"><img src="optn.png" alt="overpopulation thumbmnail" align="center" width="99%" class="tn"></a>
+ <br>
+ <br>
+ <a href="ptw.html" title="click to go to web page"><img src="twtn.png" alt="taiwan project thumbmnail" align="center" width="99%" class="tn"></a>
+<br>
+<br>
+<a href="pg.html" title="click to go to web page"><img src="gtn.png" alt="globalization thumbmnail" align="center" width="99%" class="tn"></a>
+<br>
+<br>
+<a href="pbq.html" title="click to go to web page"><img src="bqtn.png" alt="buzzfeed quiz thumbmnail" align="center" width="99%" class="tn"></a>
+</div>
+<div class="pcolumn sider">
+  <img src="bg.png" alt="blank" width="75%" height="50%">
+</div>
+<!-- div containing different left arrows to switch , connected to JS to be able to switch around (can create slideshow effect)-->
+</div>
+<div class="row" id=all2>
+  <div class="pcolumn sidel" onclick="Lasttn('tn2','tn1','b1','b3');" id=b1>
+<img src="arrowl.png" alt="arrow left png" width="75%" height="50%">
+</div>
+<div class="pcolumn sidel" onclick="Lasttn('tn3','tn2','b3','b5');" id=b3>
+<img src="arrowl.png" alt="arrow left png" width="75%" height="50%">
+</div>
+<div class="pcolumn sidel" onclick="Lasttn('tn4','tn3','b5','b7');" id=b5>
+<img src="arrowl.png" alt="arrow left png" width="75%" height="50%">
+</div>
+<div class="pcolumn sidel" onclick="Lasttn('tn1','tn4','b7','b1');" id=b7>
+<img src="arrowl.png" alt="arrow left png" width="75%" height="50%">
+</div>
+<!-- div containing different banners to switch , connected to JS to be able to switch around (can create slideshow effect)-->
+<div class="pcolumn middle" id="tn1">
+<a href="pop.html" title="click to go to web page"><img src="optn.png" alt="overpopulation thumbmnail" align="center" width="99%" class="tn"></a>
+  </div>
+  <div class="pcolumn middle" id="tn2">
+<a href="ptw.html" title="click to go to web page"><img src="twtn.png" alt="taiwan project thumbmnail" align="center" width="99%" class="tn"></a>
+  </div>
+  <div class="pcolumn middle" id="tn3">
+  <a href="pg.html" title="click to go to web page"><img src="gtn.png" alt="globalization thumbmnail" align="center" width="99%"></a>
+    </div>
+    <div class="pcolumn middle" id="tn4">
+  <a href="pbq.html" title="click to go to web page"><img src="bqtn.png" alt="buzzfeed quiz thumbmnail" align="center" width="99%"></a>
+    </div>
+<!-- div containing different right arrows to switch , connected to JS to be able to switch around (can create slideshow effect)-->
+  <div class="pcolumn sider" onclick="Nexttn('tn2','tn1','b2','b4');" id=b2>
+    <img src="arrowr.png" alt="arrow right png" width="75%" height="50%" align="right">
+  </div>
+  <div class="pcolumn sider" onclick="Nexttn('tn3','tn2','b4','b6');" id=b4>
+    <img src="arrowr.png" alt="arrow right png" width="75%" height="50%" align="right">
+  </div>
+  <div class="pcolumn sider" onclick="Nexttn('tn4','tn3','b6','b8');" id=b6>
+    <img src="arrowr.png" alt="arrow right png" width="75%" height="50%" align="right">
+  </div>
+  <div class="pcolumn sider" onclick="Nexttn('tn1','tn4','b8','b2');" id=b8>
+    <img src="arrowr.png" alt="arrow right png" width="75%" height="50%" align="right">
+  </div>
+</div>
+<div class="intro2">
+  <h2 class="sub2">click on banner to reach page</h2>
+  <p class="introo2">only switch button direction when on "Taiwan Project" thumbnail !</p>
+</div>
+<!-- div - course , general reflection on page-->
+<div class="intro3">
+<br>
+<h1 class="sub">'Course / General Reflection'</h1>
+<p class="introo1">I really enjoyed taking this class because I find web design extremely fun and rewarding.
+  This is my second year / time taking Mr.Considine's web design class,
+  the first one allowed to me find a new passion and this one gave me the oppurtunity to dive deeper
+  and to create way more elaborated projects. Web design class also gives me a lot of space for my own creativity and freedom to explore and learn new things I can do within this field.
+  To be honest , web design isn't always the most satisfying.
+  Things often wouldn't work out , the CSS doesn't come out the way I want it to ,
+  I'm missing a closing tag on an element , or the JavaScript simply does NOT make sense. However , it is always so rewarding and adrenaline
+pumping when I finally figure out something and it's working. I'd rank it 100/10 , one of my favorite feelings in the ENTIRE world.
+The projects I've chosen to showcase on my 2021 portfolio are all some of my proudest projects. Again , huge shoutout to Mr.Considine for being so laid back , challenging me to go beyond my limits
+but also stepping in and providing crucial support at the best timings. Web Design is definitely something I would continue learning and exploring in my future.
+   </p>
+</div>
+<!-- div - course , citations on page , hypertext links-->
+<div class="intro">
+<br>
+<h1 class="sub">'Citation / Resources'</h1>
+<p class="introo"><a target="_blank" href="http://cssstars.com/mac-os-dock-menu-css3/" class="ha"> > http://cssstars.com/mac-os-dock-menu-css3/</a></p>
+<p class="introo"><a target="_blank" href="https://www.w3schools.com/tags/tag_embed.asp" class="ha"> > https://www.w3schools.com/tags/tag_embed.asp</a></p>
+</div>
+<br>
+<footer align="center">Amber Fang : Portfolio 2021</footer>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+
+<script language="JavaScript">
+  /* function for the current question to disappear, and next question to appear when button pressed */
+    function Nexttn(x, y, z, r) {
+          var x = document.getElementById(x);
+          x.style.display = "block";
+          var y = document.getElementById(y);
+          y.style.display = "none";
+          var z = document.getElementById(z);
+          z.style.display = "none";
+          var r = document.getElementById(r);
+          r.style.display = "block";}
+    /* [this was a failed attempt at using objects but I tried]
+    if (div.tn == 1) {
+        document.getElementById('tn1').style.display = "none";
+        document.getElementById('tn2').style.display = "block";
+        div.tn = 2;} }
+       if (div.tn == 2) {
+        document.getElementById('tn2').style.display = "none";
+        document.getElementById('tn3').style.display = "block";
+          div.tn = 3 ;}
+
+      if (div.tn == 3) {
+        document.getElementById('tn3').style.display = "none";
+        document.getElementById('tn4').style.display = "block";
+              div.tn = 4 ;}
+      if (div.tn == 4) {
+        document.getElementById('tn4').style.display = "none";
+        document.getElementById('tn1').style.display = "block";
+                      div.tn = 1 ;} } */
+
+  /* function to allow users to return to next question */
+    function Lasttn(o, w, n, m) {
+        var i = document.getElementById(o);
+        i.style.display = "block";
+        var q = document.getElementById(w);
+        q.style.display = "none";
+        var q = document.getElementById(n);
+        q.style.display = "none";
+        var m = document.getElementById(m);
+        m.style.display = "block";}
+  /* function for all banner to display */
+        function DisplayAll () {
+          document.getElementById('all2').style.display = "none";
+          document.getElementById('all').style.display = "block"; }
+  /* function for all banner div to be hidden and slideshow banner to display */
+          function DisplayS () {
+            document.getElementById('all').style.display = "none";
+            document.getElementById('all2').style.display = "block"; }
+</script>

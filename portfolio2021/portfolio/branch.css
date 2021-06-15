@@ -1,0 +1,354 @@
+/* giving h1 a style */
+h1 { /* element */
+color: black;
+font-family:monospace;
+font-size: 40px;
+text-align: left;
+transition: font-size 2s;
+margin: 2px;
+left: 25px;
+}
+/* animation code for h1 to have the "bounce animation" */
+h1 {
+  animation-duration: 2s;
+  animation-name: bounce;
+}
+h1 {
+  animation: bounce 2s;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;}
+  50% {
+    transform: scale(1.2);
+    opacity: 1;}
+  100% {
+    transform: scale(1);}
+}
+/* setting a background color for the website*/
+body{
+  background-color: #7d9cc3;
+}
+/*css code for the dropdown and navigation bar*/
+ul {
+list-style-type: none;
+  margin: 2px;
+  padding: 38px;
+  background-color: #415771;
+  font-size: 21px;
+  align-items: right
+}
+
+
+li {
+  list-style-type: none;
+  float: left;
+  background-color: #415771;
+}
+
+li a, .dropbtn {
+  list-style-type: none;
+  display: inline-block;
+  color: #ffffff;
+  text-align: right;
+  padding: 4px 6px;
+  text-decoration: none;
+  background-color: #415771;
+}
+/*css code for the dropdown and navigation bar when hovering over the list items*/
+ul a:hover  {background-color: #7d9cc3}
+
+li a:hover .dropdown:hover .dropbtn {background-color: #ffffff}
+
+li.dropdown {
+  list-style-type: none;
+  display: inline-block;
+    background-color: #ffffff;
+}
+/* The code for the dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*size and place of shadow*/
+  z-index: 2;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #ffffff;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*a div for the navigation bar to be placed in position*/
+.nav {
+position:relative;
+text-align:center;
+width:50%;
+}
+/*a div for the h1 to be placed in position*/
+#random {
+  width: 55%;
+  margin: 2px;
+  left: 45px;
+  top: 35px;
+}
+/*css code for the animation on the right side of the website : recurring dreams and gophers*/
+.animation{
+  width:45%;
+  align-items: right;
+  display: block;
+  margin-left: 850px;
+  margin-top: -150px;
+  position: fixed;
+  animation-name: move;
+  animation-duration: 300s;
+  transition: 0.2s;
+  animation-iteration-count: infinite;
+  background-repeat: space;
+  overflow: visible;
+}
+/* keyframes code for the animation on the right side of the webiste : recurrring dreams and gophers */
+@keyframes move {
+  0% {background-image: url(try2.png);}
+  5% {background-image: url(try3.png);}
+  10% {background-image: url(try4.png);}
+  15% {background-image: url(try5.png);}
+  20% {background-image: url(try2.png);}
+  25% {background-image: url(try3.png);}
+  30% {background-image: url(try4.png);}
+  35% {background-image: url(try5.png);}
+  40% {background-image: url(try2.png);}
+  45% {background-image: url(try3.png);}
+  50% {background-image: url(try4.png);}
+  55% {background-image: url(try5.png);}
+  60% {background-image: url(try2.png);}
+  65% {background-image: url(try3.png);}
+  70% {background-image: url(try4.png);}
+  75% {background-image: url(try5.png);}
+  80% {background-image: url(try2.png);}
+  85% {background-image: url(try3.png);}
+  90% {background-image: url(try4.png);}
+  95% {background-image: url(try5.png);}
+  100% {background-image: url(try2.png);}
+}
+
+/*css code for the animation on the right side of the website : animal testing*/
+.animation2{
+  width:45%;
+  align-items: right;
+  display: block;
+  margin-left: 850px;
+  margin-top: -150px;
+  position: fixed;
+  animation-name: move2;
+  animation-duration: 300s;
+  transition: 0.5s;
+  animation-iteration-count: infinite;
+  background-repeat: space;
+}
+/* keyframes code for the animation on the right side of the webiste : animal testing */
+@keyframes move2 {
+  0% {background-image: url(try6.png);}
+  5% {background-image: url(try7.png);}
+  10% {background-image: url(try6.png);}
+  15% {background-image: url(try7.png);}
+  20% {background-image: url(try6.png);}
+  25% {background-image: url(try7.png);}
+  30% {background-image: url(try6.png);}
+  35% {background-image: url(try7.png);}
+  40% {background-image: url(try6.png);}
+  45% {background-image: url(try7.png);}
+  50% {background-image: url(try6.png);}
+  55% {background-image: url(try7.png);}
+  60% {background-image: url(try6.png);}
+  65% {background-image: url(try7.png);}
+  70% {background-image: url(try6.png);}
+  75% {background-image: url(try7.png);}
+  80% {background-image: url(try6.png);}
+  85% {background-image: url(try7.png);}
+  90% {background-image: url(try6.png);}
+  95% {background-image: url(try7.png);}
+  100% {background-image: url(try6.png);}
+}
+
+/*css code for the animation on the right side of the website : collection guide*/
+.animation3{
+  width:45%;
+  align-items: right;
+  display: block;
+  margin-left: 850px;
+  margin-top: -150px;
+  position: fixed;
+  animation-name: move3;
+  animation-duration: 300s;
+  transition: 0.5s;
+  animation-iteration-count: infinite;
+  background-repeat: space;
+}
+/* keyframes code for the animation on the right side of the webiste : collection guide */
+@keyframes move3 {
+  0% {background-image: url(try8.png);}
+  5% {background-image: url(try9.png);}
+  10% {background-image: url(try8.png);}
+  15% {background-image: url(try9.png);}
+  20% {background-image: url(try8.png);}
+  25% {background-image: url(try9.png);}
+  30% {background-image: url(try8.png);}
+  35% {background-image: url(try9.png);}
+  40% {background-image: url(try8.png);}
+  45% {background-image: url(try9.png);}
+  50% {background-image: url(try8.png);}
+  55% {background-image: url(try9.png);}
+  60% {background-image: url(try8.png);}
+  65% {background-image: url(try9.png);}
+  70% {background-image: url(try8.png);}
+  75% {background-image: url(try9.png);}
+  80% {background-image: url(try8.png);}
+  85% {background-image: url(try9.png);}
+  90% {background-image: url(try8.png);}
+  95% {background-image: url(try9.png);}
+  100% {background-image: url(try8.png);}
+}
+
+/*css code for the animation on the right side of the website : pnw project*/
+.animation4{
+  width:45%;
+  align-items: right;
+  display: block;
+  margin-left: 850px;
+  margin-top: -150px;
+  position: fixed;
+  animation-name: move4;
+  animation-duration: 300s;
+  transition: 0.5s;
+  animation-iteration-count: infinite;
+  background-repeat: space;
+}
+/* keyframes code for the animation on the right side of the webiste : pnw project */
+@keyframes move4 {
+  0% {background-image: url(try10.png);}
+  5% {background-image: url(try11.png);}
+  10% {background-image: url(try10.png);}
+  15% {background-image: url(try11.png);}
+  20% {background-image: url(try10.png);}
+  25% {background-image: url(try11.png);}
+  30% {background-image: url(try10.png);}
+  35% {background-image: url(try11.png);}
+  40% {background-image: url(try10.png);}
+  45% {background-image: url(try11.png);}
+  50% {background-image: url(try10.png);}
+  55% {background-image: url(try11.png);}
+  60% {background-image: url(try10.png);}
+  65% {background-image: url(try11.png);}
+  70% {background-image: url(try10.png);}
+  75% {background-image: url(try11.png);}
+  80% {background-image: url(try10.png);}
+  85% {background-image: url(try11.png);}
+  90% {background-image: url(try10.png);}
+  95% {background-image: url(try11.png);}
+  100% {background-image: url(try10.png);}
+}
+
+/*css code for the animation on the right side of the website : buzzfeed quiz*/
+.animation5{
+  width:45%;
+  align-items: right;
+  display: block;
+  margin-left: 850px;
+  margin-top: -150px;
+  position: fixed;
+  animation-name: move5;
+  animation-duration: 300s;
+  transition: 0.5s;
+  animation-iteration-count: infinite;
+  background-repeat: space;
+}
+/* keyframes code for the animation on the right side of the webiste : buzzfeed quiz */
+@keyframes move5 {
+  0% {background-image: url(try12.png);}
+  5% {background-image: url(try13.png);}
+  10% {background-image: url(try12.png);}
+  15% {background-image: url(try13.png);}
+  20% {background-image: url(try12.png);}
+  25% {background-image: url(try13.png);}
+  30% {background-image: url(try12.png);}
+  35% {background-image: url(try13.png);}
+  40% {background-image: url(try12.png);}
+  45% {background-image: url(try13.png);}
+  50% {background-image: url(try12.png);}
+  55% {background-image: url(try13.png);}
+  60% {background-image: url(try12.png);}
+  65% {background-image: url(try13.png);}
+  70% {background-image: url(try12.png);}
+  75% {background-image: url(try13.png);}
+  80% {background-image: url(try12.png);}
+  85% {background-image: url(try13.png);}
+  90% {background-image: url(try12.png);}
+  95% {background-image: url(try13.png);}
+  100% {background-image: url(try12.png);}
+}
+
+/*css code for the animation on the right side of the website : intellectual property*/
+.animation6{
+  width:45%;
+  align-items: right;
+  display: block;
+  margin-left: 850px;
+  margin-top: -150px;
+  position: fixed;
+  animation-name: move6;
+  animation-duration: 300s;
+  transition: 0.5s;
+  animation-iteration-count: infinite;
+  background-repeat: space;
+}
+/* keyframes code for the animation on the right side of the webiste : intellectual property */
+@keyframes move6 {
+  0% {background-image: url(try14.png);}
+  5% {background-image: url(try15.png);}
+  10% {background-image: url(try14.png);}
+  15% {background-image: url(try15.png);}
+  20% {background-image: url(try14.png);}
+  25% {background-image: url(try15.png);}
+  30% {background-image: url(try14.png);}
+  35% {background-image: url(try15.png);}
+  40% {background-image: url(try14.png);}
+  45% {background-image: url(try15.png);}
+  50% {background-image: url(try14.png);}
+  55% {background-image: url(try15.png);}
+  60% {background-image: url(try14.png);}
+  65% {background-image: url(try15.png);}
+  70% {background-image: url(try14.png);}
+  75% {background-image: url(try15.png);}
+  80% {background-image: url(try14.png);}
+  85% {background-image: url(try15.png);}
+  90% {background-image: url(try14.png);}
+  95% {background-image: url(try15.png);}
+  100% {background-image: url(try14.png);}
+}
+/* a div style for the text presented to be located and styled with background colors and borders */
+.class1{
+padding: 25px;
+background-color: #ffffff;
+margin: 20px;
+color: #415771;
+font-size: 18px;
+box-shadow: inset 0 0 0 5px #415771;
+width: 45%;
+}
+/* style for h3 element and giving it a shadow effect */
+h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px #7d9cc3;
+}

@@ -1,0 +1,386 @@
+/*to set background color for body */
+body {
+  background-color: #F9F7F1;
+}
+/* set position and space for the div header (technically creating a contianer for video and title) */
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 100%;
+  height: 350px;
+  border-bottom: 5px solid #406B15;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 5px;
+  animation: bordercolor;
+  animation-duration: 10s;
+}
+@keyframes bordercolor {
+  0% {
+  border-bottom: 5px solid red;
+}
+10% {
+  border-bottom: 10px solid orange;
+}
+20% {
+  border-bottom: 10px solid yellow;
+}
+30% {
+  border-bottom: 10px solid #406B15;
+}
+40% {
+  border-bottom: 10px solid blue;
+}
+50% {
+  border-bottom: 10px solid purple;
+}
+60% {
+  border-bottom: 10px solid brown;
+}
+70% {
+  border-bottom: 10px solid black;
+}
+80% {
+  border-bottom: 10px solid pink;
+}
+90% {
+  border-bottom: 10px solid white;
+}
+100% {
+  border-bottom: 5px solid #406B15;
+}
+}
+/* animation for h1 in header to bounce */
+@keyframes tenter {
+  0% {transform: scale(0.1); opacity: 0;}
+  50% {transform: scale(1.2); opacity: 1;}
+  100% {transform: scale(1);}
+}
+
+/* title design sitting inside div header */
+h1.header {
+  font-weight: bold;
+  color: #F9F7F1;
+  letter-spacing: 5px;
+  padding-left: -50px;
+  text-align: center;
+  padding-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 42px;
+  animation: tenter 0.8s;
+}
+
+/* set video and style as background in header (z index placing it behind the title) */
+video.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-position: center;
+  object-fit: cover;
+}
+/* style and design for all subtitles */
+h1.sub {
+  font-weight: bold;
+  color: #406B15;
+  letter-spacing: 3px;
+  padding-left: 25px;
+}
+
+h1.sub2 {
+  font-weight: bold;
+  color: #406B15;
+  letter-spacing: 3px;
+  padding-left: 6%;
+}
+
+h2.sub2 {
+  font-weight: bold;
+  color: #9AAE09;
+  letter-spacing: 2px;
+  padding-left: 25px;
+  text-align: center;
+  margin: 10px;
+}
+/*div style for intro , white BG */
+.intro {
+  height: 300px;
+  padding: 20px 25px;
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-right: 50px;
+  text-align: left;
+  background-color: #F9F7F1;
+  position: relative;
+}
+/* div style 2 for intro , beige bg */
+.intro1 {
+  height: 300px;
+  padding: 25px 35px;
+  padding-bottom: -5px;
+  margin-top: 35px;
+  padding-left: 60px;
+  text-align: left;
+  background-color: #E5E0C0;
+}
+/*div style for intro , white BG , height adjusted*/
+.intro2 {
+  height: 100px;
+  padding: 20px 25px;
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-right: 50px;
+  text-align: left;
+  background-color: #F9F7F1;
+}
+/*div style for reflection div on home page - height adjusted*/
+.intro3 {
+  height: 400px;
+  padding: 20px 25px;
+  margin-top: 30px;
+  text-align: left;
+  background-color: #E5E0C0;
+}
+/* style - anchor on home page */
+a.ha {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* styling p in intro */
+p.introo {
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+}
+
+p.introo1 {
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+p.introo2 {
+  font-weight: bold;
+  color: black;
+  font-size: 22px;
+  letter-spacing: 3px;
+  text-align: center;
+  width: 100%;
+  margin: 20px;
+  padding: 5px;
+}
+/* animation for images in class (div) fade */
+img.fade {
+  animation: fade 2s;
+}
+
+@keyframes fade {
+  0% {opacity: 0;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
+/* code for columns (the slideshow thingy) */
+.pcolumn {
+  float: left;
+}
+
+/* Left and right column */
+.pcolumn.sidel {
+  width: 15%;
+  cursor: pointer;
+}
+
+.pcolumn.sider {
+  width: 15%;
+  cursor: pointer;
+}
+
+/* Middle column */
+.pcolumn.middle {
+  width: 70%;
+  cursor: pointer;
+  align-items: center;
+}
+
+/*for another kind of column - left */
+.pcolumn.left {
+  width: 30%;
+  cursor: default;
+}
+/*for another kind of column - right */
+.pcolumn.right1 {
+  width: 15%;
+  cursor: default;
+}
+/*for branch pages and embed column - left */
+.pcolumn.branchl {
+  width: 10%;
+  cursor: default;
+  background-color: #E5E0C0;
+}
+/*for branch pages and embed column - right */
+.pcolumn.branchr {
+  width: 10%;
+  cursor: default;
+  background-color: #E5E0C0;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* button and thumnails set display to none to match Javascript */
+ #tn2 {
+  display: none;
+}
+
+#tn3 {
+  display: none;
+}
+
+#tn4 {
+  display: none;
+}
+
+#b3 {
+  display: none;
+}
+
+#b4 {
+    display: none;
+}
+
+#b5 {
+    display: none;
+}
+
+#b6 {
+    display: none;
+}
+
+#b7 {
+    display: none;
+}
+
+#b8 {
+    display: none;
+}
+
+#all {
+    display: none;
+}
+/* mac os dock - navigation bar */
+
+/* create a container for the icons (list items) */
+#dock-container {
+      position: fixed;
+      bottom: 0;
+      text-align: center;
+      right: 30%;
+      left: 30%;
+      width: 40%;
+      background: rgba(192,192,192,0.3);
+      border-radius: 5px 5px 0 0;
+  }
+
+/* list items as in-line blocks so they lie within the container */
+  #dock-container li {
+      list-style-type: none;
+      display: inline-block;
+      position: relative;
+  }
+
+  /* list items images style (reflect) */
+
+  #dock-container li img {
+       width: 64px;
+       height: 64px;
+       -webkit-box-reflect: below 2px
+      -webkit-gradient(linear, left top, left bottom, from(transparent),
+                 color-stop(0.7, transparent), to(rgba(255,255,255,.5)));
+       -webkit-transition: all 0.3s;
+       -webkit-transform-origin: 50% 100%;
+     }
+
+     /* for icons to enlarge when hovered over like the mac os dock */
+
+     #dock-container li:hover img {
+             -webkit-transform: scale(2);
+             margin: 0 2em;
+           }
+    /* for icons closed to the hovered over icon to get closer and a little bigger */
+
+     #dock-container li:hover + li img,
+     #dock-container li.prev img {
+             -webkit-transform: scale(1.5);
+             margin: 0 1.5em;
+           }
+    /* span (text) for icon title - and to display when hovered over */
+
+      #dock-container li span {
+       display: none;
+       position: absolute;
+       bottom: 140px;
+       left: 0;
+       width: 100%;
+       background-color: rgba(0,0,0,0.75);
+       padding: 4px 2px;
+   }
+   #dock-container li:hover span {
+       display: block;
+       color: #fff;
+   }
+
+/* button for all banner to display */
+   .button1 {
+     background-color: #406B15;
+     border: none;
+     color: #E5E0C0;
+     padding: 10px 12px;
+     text-align: center;
+     text-decoration: none;
+     display: block;
+     font-size: 14px;
+     cursor: pointer;
+     transition-duration: 0s;
+     margin-top: 25px;
+   }
+/* css for button hover function , to pop out with border */
+   .button1:hover {
+     background-color: #E5E0C0;
+     color: #406B15;
+
+   }
+
+/* style for image cursor to be pointer */
+img.tn {
+  cursor: pointer;
+}
+
+/* for embedded website - display */
+.web {
+  border: solid 3px black;
+  width: 90%;
+  align-items: center;
+  padding: 10px 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #FFFFFF;
+}
+
+.beigebg {
+  background-color: #E5E0C0;
+  z-index: -1;
+  padding: 20px 0;
+}
