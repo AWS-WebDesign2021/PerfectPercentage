@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+<!-- title is how the website name is displayed on its tab -->
+  <title>QUIZ : HOME</title>
+<!-- linking it to a css file -->
+  <link href="quiz.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<!-- div for header (css settings) -->
+<div class="header">
+  <a href="home.html"><img src="logo.png" class="logo"></a>
+  <br>
+  <h2>Do you have the qualities to be a GEN Z? Or are you a Millennial / Boomer?</h2>
+</div>
+
+<!-- div for ad content , only gives it 25% of space on website (css settings) -->
+<div class="adcontent">
+  <br>
+  <br>
+<!-- place ad within an anchor , making it clickable (a giant link) , and ad is made with animations in linked css file -->
+  <a target="_blank" href="https://youtu.be/dQw4w9WgXcQ?t=3"><div class="ad">
+  </div></a>
+</div>
+<br>
+<br>
+<br>
+<!-- div for ad content , gives it 75% of space on website (css settings) -->
+<div class="content">
+  <div class="q1" id=start>
+<!-- form for name (later takes the input to display) in  results -->
+    <form class="style" action="index.html" method="post">
+      <br><label for="name">Enter Your Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+<!-- button to proceed to start the quiz  -->
+      <input type="button" value="Start Quiz" onclick="startQuiz();" class="button1">
+      <br>
+   </form>
+ </div>
+ <br>
+ <!-- div for results / different results when button clicked , initial display set to none -->
+ <div class="q2" id=result>
+   <p>Hi! <span id="name1"></span> <br> <span id="end"></span> <br> Thank you, Have a wonderful day!</p>
+<!-- button that allows users to refresh and retake the quiz on click  -->
+   <a href="home.html"><input type="button" value="Retake Quiz" onclick="retake();" class="button1"></a>
+ </div>
+ <div class="q2" id=genz>
+   <img class="meme" src="https://img.wattpad.com/73cf8c0c3963c581dab4357a38f7bf4f9fa29e4a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f78764b4c322d4e646a7a423838513d3d2d33332e313631613463343363333363333430633230353836373235363636322e6a7067?s=fit&w=720&h=720" alt="meme1" >
+<br>
+   <img class="meme"src="https://www.tastefullyoffensive.com/wp-content/uploads/2021/02/gen-z.jpg" alt="meme2">
+<br>
+   <img class="meme" src="https://whitmanwire.com/wp-content/uploads/2020/03/Opinion_Paul_DadaistHumour_5-900x810.jpg" alt="meme3">
+</div>
+<div class="q2" id=m>
+  <img class="meme"src="https://www.liveabout.com/thmb/Hma0nK4-vTNlgn1hpyDoJwRMI4w=/750x650/filters:no_upscale():max_bytes(150000):strip_icc()/millennialmemes11-5d5d9c9d21c444369fb1c6f58b28a13f.jpg" alt="meme1">
+<br>
+  <img class="meme"src="https://media.distractify.com/brand-img/9cLLEV-FO/0x0/gen-x-memes-header-1574867847149.jpg" alt="meme2">
+<br>
+  <img class="meme"src="https://i.imgur.com/4GV0D4x.jpg" alt="meme3">
+</div>
+<div class="q2" id=boomer>
+  <img class="meme"src="https://i.redd.it/dy88vx84k6t21.jpg" alt="meme1">
+<br>
+  <img class="meme"src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/07/11/11/harold-0.jpg?width=1200" alt="meme2">
+</div>
+ <div class="q2" id=p>
+   <h4>What is a Boomer?</h4>
+   <p class="sub">Definition : </p><br><p class="cap"> > A person from the baby boomer generation or really anyone who is older than the person using the word, usually used if said person is being annoying or talking trash about a younger generation. <br><br> > Sometimes used in a joking way among friends. <br><br> > Can also describe someone who is out of touch, typically with technology.<br><br> > Or Somebody that just can't keep up with the current trends.</p>
+    </div>
+  <div class="q2" id=f>
+    <h4>What is a Millennial?</h4>
+    <p class="sub">Definition : </p><br><p class="cap"> > Generation Y (people born between 1981-1991) <br><br>  >  Generation Z (born between 1991-2001). <br><br> > Both Generation Y and Generation Z can be called "Millennials," with the primary difference between the two being technology.</p>
+    </div>
+    <div class="q2" id=u>
+      <h4>What is GEN Z??</h4>
+      <p class="sub">Definition : </p><br><p class="cap"> > People born between 1995 and 2009 <br><br>  >  Generation Z (born between 1991-2001). <br><br> > The generation that's literally not afraid of anything, except bugs. The generation that ate tide pods for fun, made a meme out of a national crisis (heard of WW3?) <br><br> > Gen Z are scared to ask for more ketchup but will body slam a cop. <br><br> > also can be referred to as ZOOMER</p>
+      </div>
+<!-- form and choices for qestion 1 , css design -> q1  -->
+  <div class="q1" id=q2>
+    <form class="style" action="index.html" method="post">
+      <label for="show"><h1>What does the Alphabet Mafia stand for?
+</h1></label><br>
+      <br>
+      <input type="radio" id="mafia1" name="mafia" value="wrong">
+<!-- The JavaScript logic behind choice being selected / checked on click of the p is assigning an onclick function to the p element and when on click , the parameter/id that it is assigned to is selected -->
+<!-- The choices all have the same name , so only one can be selected at a time , no worries on multiple selection and point calculation going wrong-->
+      <label for="choice"><p class="choice" onclick="check('mafia1');">A group of young people on tiktok</p>
+</label><br>
+      <input type="radio" id="mafia2" name="mafia" value="wrong">
+      <label for="choice"><p class="choice" onclick="check('mafia2');">An online-based mafia devoted to humor</p></label><br>
+      <input type="radio" id="mafia3" name="mafia" value="right">
+      <label for="choice"><p class="choice" onclick="check('mafia3');">The LGBTQ+ community</p></label><br>
+      <br>
+<!-- buttons to proceed to next question or to return to last section  -->
+<!-- The JavaScript logic behind this is to set parameters and assign them ID to set their div display to either block (so display) , or none -->
+      <input type="button" value="Hold Up I typed my name wrong :/" onclick="LastQ('start','q2');" class="button1">
+      <input type="button" value="Next Question!" onclick="NextQ('q2','q3');" class="button1">
+      <br>
+   </form>
+  </div>
+<!-- form and choices for qestion 2 , css design -> q1 -->
+  <div class="q1" id=q3>
+    <form class="style" action="index.html" method="post">
+      <label for="show"><h1>Favorite Social Media?</h1></label><br>
+      <img src="https://inteng-storage.s3.amazonaws.com/img/iea/rV6ndqlOXq/sizes/social-media_md.jpg" alt="sm" height="200px" width="450px">
+      <br>
+      <input type="radio" id="sm1" name="sm" value="eh">
+      <label for="choice"><p class="choice" onclick="check('sm1');">Instagram</p>
+</label><br>
+      <input type="radio" id="sm2" name="sm" value="sus">
+      <label for="choice"><p class="choice" onclick="check('sm2');">Facebook</p></label><br>
+      <input type="radio" id="sm3" name="sm" value="eh">
+      <label for="choice"><p class="choice" onclick="check('sm3');">TikTok</p></label><br>
+      <br>
+<!-- buttons to proceed to next question or to return to last section  -->
+      <input type="button" value="Last Question" onclick="LastQ('q2','q3');" class="button1">
+      <input type="button" value="Next Question!" onclick="NextQ('q3','q4');" class="button1">
+      <br>
+   </form>
+  </div>
+<!-- form and choices for qestion 3 , css design -> q1 -->
+  <div class="q1" id=q4>
+    <img src="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Tiktok-512.png" alt="tt" height="300px" width="300px">
+
+    <form class="style" action="index.html" method="post">
+      <label for="show"><h1>Identify the TikToker :</h1></label><br>
+      <br>
+      <input type="radio" id="tt1" name="tt" value="wrong">
+      <label for="choice"><p class="choice" onclick="check('tt1');">Pewdiepie</p>
+</label><br>
+      <input type="radio" id="tt2" name="tt" value="right">
+      <label for="choice"><p class="choice" onclick="check('tt2');">Charli D' Amelio</p></label><br>
+      <input type="radio" id="tt3" name="tt" value="wrong">
+      <label for="choice"><p class="choice" onclick="check('tt3');">BTS</p></label><br>
+      <br>
+<!-- buttons to proceed to next question or to return to last section  -->
+      <input type="button" value="Last Question" onclick="LastQ('q3','q4');" class="button1">
+      <input type="button" value="Next Question!" onclick="NextQ('q4','q5');" class="button1">
+      <br>
+   </form>
+  </div>
+<!-- form and choices for qestion 4 , css design -> q1 -->
+  <div class="q1" id=q5>
+    <form class="style" action="index.html" method="post">
+      <label for="show"><h1>Gen Z's Fav Coffee Order :</h1></label><br>
+      <img src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_938993594_391384.jpg" alt="co" height="200px" width="450px">
+      <br>
+      <input type="radio" id="co1" name="co" value="right">
+      <label for="choice"><p class="choice" onclick="check('co1');">Iced Coffee</p>
+</label><br>
+      <input type="radio" id="co2" name="co" value="wrong">
+      <label for="choice"><p class="choice" onclick="check('co2');">Cold Brew</p></label><br>
+      <input type="radio" id="co3" name="co" value="wrong">
+      <label for="choice"><p class="choice" onclick="check('co3');">Unicorn Frappuccino</p></label><br>
+      <br>
+<!-- buttons to proceed to calculate and display results or to return to last section  -->
+      <input type="button" value="Last Question" onclick="LastQ('q4','q5');" class="button1">
+      <input type="button" value="Tell Me The Results!" onclick="result();" class="button1">
+      <br>
+   </form>
+  </div>
+</div>
+
+  <script language="JavaScript">
+/* function for the start div to disappear when button pressed */
+  function startQuiz() {
+      var r = document.getElementById('start');
+      r.style.display = "none";
+      var x = document.getElementById('q2');
+      x.style.display = "block";
+  }
+/* function for the current question to disappear, and next question to appear when button pressed */
+  function NextQ(x, n) {
+      var y = document.getElementById(x);
+      y.style.display = "none";
+      var z = document.getElementById(n);
+      z.style.display = "block";}
+/* function to allow users to return to next question */
+  function LastQ(o, w) {
+      var o = document.getElementById(o);
+      o.style.display = "block";
+      var w = document.getElementById(w);
+      w.style.display = "none";}
+/* function to allow the choice to be selected when the paragraph is clicked on (setting p with onclick function) */
+   function check(m) {
+    document.getElementById(m).checked = true;
+  }
+/* function for results to display , also to assign values to the different answers ,
+ different point ranges display different results */
+    function result(){
+  var q = document.getElementById('q5');
+  q.style.display = "none";
+
+  var d = document.getElementById('result');
+  d.style.display = "block";
+
+  var p = document.getElementById('p');
+  p.style.display = "block";
+
+  var f = document.getElementById('f');
+  f.style.display = "block";
+
+  var u = document.getElementById('u');
+  u.style.display = "block";
+/* assigning values , points is the name of a variable , and when a choice is checked
+, the points start adding or substracting from 0*/
+  var points = 0
+  if (document.getElementById("mafia1").checked) {
+    points = points - 2;
+  }
+  if (document.getElementById("mafia2").checked) {
+    points = points - 2;
+  }
+  if (document.getElementById("mafia3").checked) {
+    points = points + 2;
+  }
+
+  if (document.getElementById("sm1").checked) {
+    points = points + 2;
+  }
+  if (document.getElementById("sm2").checked) {
+    points = points - 5;
+  }
+  if (document.getElementById("sm3").checked) {
+    points = points + 3;
+  }
+
+  if (document.getElementById("tt1").checked) {
+    points = points - 2;
+  }
+  if (document.getElementById("tt2").checked) {
+    points = points + 2;
+  }
+  if (document.getElementById("tt3").checked) {
+    points = points -2;
+  }
+
+if (document.getElementById("co1").checked) {
+   points = points + 5;
+ }
+ if (document.getElementById("co2").checked) {
+   points = points - 2;
+ }
+ if (document.getElementById("co3").checked) {
+   points = points - 1000;
+ }
+/* span for the name within results div */
+ document.getElementById("name1").innerHTML = document.getElementById("name").value;
+/* assign point ranges and outcomes , after value of points are calculated
+it falls between one of these ranges
+ therefore has a specific outcome assigned to it*/
+ if (points == 12) {
+ document.getElementById('end').innerHTML = "Congratulations ! You're a Gen Z! (or at least you could be an honrary member of the Gen Z) Enjoy these memes!";
+ var h = document.getElementById('genz');
+ h.style.display = "block";
+ }
+
+ if (points < 11) {
+ document.getElementById('end').innerHTML = "You're Gen X or Y .. not too bad ..  Enjoy these memes! (that should match your humor)";
+ var l = document.getElementById('m');
+ l.style.display = "block";
+ }
+
+ if (points < 0) {
+ document.getElementById('end').innerHTML = "You're a boomer .. nothing much to comment on that .. but enjoy these memes.. or not ..";
+ var b = document.getElementById('boomer');
+ b.style.display = "block";
+ }
+
+}
+
+/* retake button */
+ function retake() {
+   window.location.reload();
+ }
+</script>
+
+</body>
